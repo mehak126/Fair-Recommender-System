@@ -32,7 +32,6 @@ This code merges the following types of aspects only for MDD(for other topics th
 * In-depth knowledge on age-appropriate feeding - Diversity/Food groups 
 * In-depth knowledge on age-appropriate feeding - Consistency of food
 
-----------------------------------------
 CF 39
 Entitlements (social and govt.) 1 10
 Basic awareness - Importance of breast-milk 37 1201
@@ -132,7 +131,7 @@ PHC-CHC â€“ grievance 14 187
 PHC-CHC â€“ others 2 35
 [MERGE ALL PHC-CHC CATEGORIES TOGETHER]
 VHSND â€“ information 8 1200
-----------------------------------------
+
 Family Planning 25
 Basic awareness: Importance of family planning- Better health of mother and children 13 1248
 Basic awareness: Importance of family planning - Socio-cultural well-being 6 709
@@ -156,12 +155,12 @@ Initiatives 1 25
 Discussion in SHG meeting - About importance of family planning 1 22
 Serial appreciation and feedback - Positive 4 111
 entertainment 1 23
-----------------------------------------
+
 
 Education 6
 Bal sansad/ Meena manch 18 995
 Career counselling - teacher interview 18 900
-----------------------------------------
+
 
 To run this file, 
 '''
