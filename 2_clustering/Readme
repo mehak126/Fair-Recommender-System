@@ -1,1 +1,24 @@
-123
+Step 1: Run python3 0_heard.py thresh_th1_th2.csv
+thresh_th1_th2.csv would have been generated in the folder 1_power_user_extraction. This will generate a file 'user_preferences.txt'
+containing preference vectors of all power users. A pickled dictionary u_dict.pickle will also be created which maps each user
+to it's position in the vectors.
+
+Step 2: 
+first, uncomment line 84. 
+Then run python3 1_entropy.py
+note: please update the thresholds file name in line 9 of the code. 
+The plot containing cumulative distribution of k-l divergence scores (log) will be plotted. Note the value you want to select as the cutoff.
+Then, comment line 84 and update the threshold in the if condition in line 100.
+Run python3 1_entropy.py again.
+This will generate 2 files:
+'cat_user_data_10_equal_rates.txt'- containing vectors of users having unique preferences (above threshold)
+'new_u_dict.pickle'- containing dictionary of users with unique preferences
+
+Step 3:
+First uncomment lines 62-89 for plotting the k-prototype elbow curve. 
+Run python3 2_k_prototype.py
+This will plot the k-prototype elbow curve.
+Select the optimal value and set it in line 18. Comment lines 62-89 again and run the code. 
+A t-SNE plot visualising the clusters and a file 'n_clusters_k_prototype_equal_rates.txt' will be generated (where
+n_clusters is the number of clusters set in line 18) containing which user belongs to which cluster. The users will be
+identified by the numbers allotted in new_u_dict.pickle in step 2.
