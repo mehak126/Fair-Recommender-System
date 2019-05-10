@@ -8,4 +8,31 @@ Input: Required - thresh_2.5_5.csv in the same folder. This file is generated in
 two thresholds set as th1=2.5 and th2=5 
 Output: Two image that has the distribution of users and items across themes.
 
-##demog
+## demog
+# demog.py
+To run the code - 
+python demog.py
+Purpose: For every cluster, we look at the demographical distribution
+Input: 
+Output: on console - 
+-------------cluster id---------------
+prints percentage of every group type in that cluster(corresponding to id)
+
+6 such outputs for every cluster are generated for analysis of gender, age, location, pregnant women at home, 
+they have children or not, no. of children 
+
+# demog1.py
+To run the code - 
+python demog1.py
+Purpose: For male and female, we look at preferences for different aspects and topics 
+Input: 
+Fixed - SV1.xlsx, SV2.xlsx, line 58 - change to path of merge11_col.py
+Acc to user - 
+                line 66 - item_asp_map.pickle
+                line 69 - u_dict.pickle (available in Data folder0
+
+Output: 
+1. Uncommenting lines(83-107) -prints zscore on console- will give the the resuts for aspects and topics
+2. Commenting lines(83-107) - Plots generated - will give the the resuts for just topics
+  2a. Comenting line 125(like = 1) - gives the liking trend(towards topics) in male and female
+  2b. Uncommenting line 125 - gives the listenership trend in male and female 
