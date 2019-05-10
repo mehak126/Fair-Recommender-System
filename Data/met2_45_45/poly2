@@ -1,0 +1,119 @@
+----- cluster 0------
+nan: 463
+<= 0: 74
+> 0: 180
+<= 0: 180
+> 0: 180
+Mean Train Accuracy:0.811965811965812
+Mean Test Accuracy:0.6349206349206349
+                            Feature         pvals
+0                          Constant  0.000000e+00
+1                            Rating  1.071180e-20
+2                   Basic awareness  2.303811e-06
+3  Serial appreciation and feedback  1.954109e-12
+4                           general  4.891786e-01
+5               Status of the women  2.432906e-02
+6           Iron deficiency/ anemia  6.785680e-01
+7                 Context Intensity  5.380592e-02
+----- cluster 1------
+nan: 410
+<= 0: 200
+> 0: 107
+<= 0: 200
+> 0: 200
+Mean Train Accuracy:0.6461538461538462
+Mean Test Accuracy:0.3
+                            Feature         pvals
+0                          Constant  0.000000e+00
+1                            Rating  4.499654e-12
+2                   Basic awareness  2.160655e-02
+3  Serial appreciation and feedback  2.528787e-02
+4                           general  2.027536e-01
+5               Status of the women  6.439304e-01
+6           Iron deficiency/ anemia  1.000000e+00
+7                 Context Intensity  4.467448e-02
+----- cluster 2------
+nan: 323
+<= 0: 71
+> 0: 323
+<= 0: 323
+> 0: 323
+Mean Train Accuracy:0.7708830548926014
+Mean Test Accuracy:0.0
+                            Feature     pvals
+0                          Constant  0.000000
+1                            Rating  0.077342
+2                   Basic awareness  0.714082
+3  Serial appreciation and feedback  0.403643
+4                           general  0.001522
+5               Status of the women  0.001406
+6           Iron deficiency/ anemia  0.015739
+7                 Context Intensity  0.000869
+----- cluster 3------
+nan: 426
+<= 0: 191
+> 0: 100
+<= 0: 191
+> 0: 191
+Mean Train Accuracy:0.6532258064516129
+Mean Test Accuracy:0.23880597014925373
+                            Feature     pvals
+0                          Constant  0.000000
+1                            Rating  0.003619
+2                   Basic awareness  0.050175
+3  Serial appreciation and feedback  0.450400
+4                           general  0.431286
+5               Status of the women  0.226779
+6           Iron deficiency/ anemia  0.215037
+7                 Context Intensity  0.299021
+----- cluster 4------
+nan: 649
+<= 0: 41
+> 0: 27
+<= 0: 41
+> 0: 41
+Mean Train Accuracy:0.7169811320754716
+Mean Test Accuracy:0.5517241379310345
+                            Feature     pvals
+0                          Constant  0.000000
+1                            Rating  0.000325
+2                   Basic awareness  0.721790
+3  Serial appreciation and feedback  0.595682
+4                           general  0.252031
+5               Status of the women  0.320326
+6           Iron deficiency/ anemia  0.987878
+7                 Context Intensity       NaN
+----- cluster 5------
+nan: 145
+<= 0: 509
+> 0: 63
+<= 0: 509
+> 0: 509
+Mean Train Accuracy:0.7821482602118003
+Mean Test Accuracy:0.2801120448179272
+                            Feature         pvals
+0                          Constant  0.000000e+00
+1                            Rating  1.271024e-10
+2                   Basic awareness  1.940565e-10
+3  Serial appreciation and feedback  4.598427e-24
+4                           general  7.146421e-01
+5               Status of the women  6.742536e-01
+6           Iron deficiency/ anemia  2.901202e-09
+7                 Context Intensity  1.568068e-03
+----- cluster 6------
+nan: 581
+<= 0: 62
+> 0: 74
+<= 0: 74
+> 0: 74
+Mean Train Accuracy:0.78125
+Mean Test Accuracy:0.6730769230769231
+                            Feature         pvals
+0                          Constant  0.000000e+00
+1                            Rating  2.806347e-09
+2                   Basic awareness  4.718168e-03
+3  Serial appreciation and feedback  3.620163e-05
+4                           general  1.340465e-01
+5               Status of the women  2.286719e-02
+6           Iron deficiency/ anemia  1.187290e-01
+7                 Context Intensity  3.476498e-01
