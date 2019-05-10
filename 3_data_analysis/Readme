@@ -1,1 +1,11 @@
-123
+### Description of files 
+
+## eda.py
+To run the code - 
+python eda.py
+
+Input: Required - thresh_2.5_5.csv in the same folder. This file is generated in the power user extraction folder with the
+two thresholds set as th1=2.5 and th2=5 
+Output: Two image that has the distribution of users and items across themes.
+
+##demog
