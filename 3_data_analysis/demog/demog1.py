@@ -24,7 +24,7 @@ def plot(x1, x2):
 if __name__ == '__main__':
 
 	# data = pandas.read_csv('thresh_2.5_5.csv', delimiter=',',  low_memory=False, header= None).as_matrix()
-	data = pandas.read_csv('../Data/merge_11col.csv', low_memory=False).as_matrix()
+	data = pandas.read_csv('../../Data/merge_11col.csv', low_memory=False).as_matrix()
 	demo1 = pandas.read_excel('SV1.xlsx').as_matrix()
 	demo2 = pandas.read_excel('SV2.xlsx').as_matrix()
 
@@ -32,10 +32,10 @@ if __name__ == '__main__':
 	positive_interaction_list = ["dtmf_2","dtmf_3","dtmf_5","dtmf_6","completed"]
 
 
-	with open('../1 SKIP/item_asp_map.pickle', 'rb') as handle:
+	with open('item_asp_map.pickle', 'rb') as handle:
 		item_asp_map = pickle.load(handle)
 
-	with open('../Data/cf/u_dict.pickle', 'rb') as handle:
+	with open('../../Data/cf/u_dict.pickle', 'rb') as handle:
 		u_dict = pickle.load(handle)
 
 	user_gend = {} #user gender dictionary
@@ -126,73 +126,8 @@ if __name__ == '__main__':
 	print(z)
 	plot(female, male)
 
-	exit()
 
 
 
 
-
-		
-	print(count)
-	print(summ)
-	print(num_clusters)
-
-	for i in range(len(gend)):
-		print("-----------"+str(i)+"---------")
-		modify(gend[i],sum(gend[i].values()))
-		print(gend[i])
-
-	exit()
-
-	print("\n\n")
-	for i in range(len(aged)):
-		print("-----------"+str(i)+"---------")
-		modify(aged[i], sum(aged[i].values()))
-		print(aged[i])
-
-	print("\n\n")
-	for i in range(len(locd)):
-		print("-----------"+str(i)+"---------")
-		modify(locd[i], sum(locd[i].values()))
-		print(locd[i])
-	# print(gend)
-	# print(aged)
-
-
-	pregd = [Counter() for i in range(num_clusters)]
-	smalld = [Counter() for i in range(num_clusters)]
-	childd = [Counter() for i in range(num_clusters)]
-
-	count = 0
-	for i in range(demo2.shape[0]):
-		user = str(demo2[i,1]) #phone number
-		if user not in u_dict:
-			continue
-		count += 1
-		cluster = user_cluster[u_dict[user]]
-		preg = demo2[i,3]
-		small_kid = demo2[i,4]
-		child = demo2[i,5] #location
-		pregd[cluster][preg] += 1
-		smalld[cluster][small_kid] += 1
-		childd[cluster][child] += 1 
-
-	print(count)
-	print(summ)
-	print("\n\n")
-	for i in range(len(pregd)):
-		print("-----------"+str(i)+"---------")
-		modify(pregd[i], sum(pregd[i].values()))
-		print(pregd[i])
-
-	print("\n\n")
-	for i in range(len(smalld)):
-		print("-----------"+str(i)+"---------")
-		modify(smalld[i], sum(smalld[i].values()))
-		print(smalld[i])
-
-	print("\n\n")
-	for i in range(len(childd)):
-		print("-----------"+str(i)+"---------")
-		modify(childd[i], sum(childd[i].values()))
-		print(childd[i])
+	
