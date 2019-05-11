@@ -1,5 +1,5 @@
 import numpy as np 
-import pandas
+import pandas, sys
 import csv
 from collections import Counter
 import pickle
@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
 
 	#### UPDATE
-	num_clusters = 5
+	num_clusters = int(sys.argv[1])
 	unique_items = len(Counter(data[:, 1]))
 
 	count = 0
