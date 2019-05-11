@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd 
-import pickle 
+import pickle, sys
 import math
 from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import fetch_20newsgroups_vectorized
@@ -29,7 +29,7 @@ def plotc(cluster, x, y):
 
 if __name__ == "__main__":
 
-	num_clusters = 7
+	num_clusters = int(sys.argv[1])
 
 	# datax = pd.read_csv('regression_aspect_merge_new_metric.csv', low_memory=False, header = None).as_matrix()
 	datax = pd.read_csv('../Data/met2_45_45/features_equal_rates.csv', low_memory=False, header = None).as_matrix()
