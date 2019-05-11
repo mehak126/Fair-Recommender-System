@@ -49,11 +49,8 @@ if __name__ == "__main__":
 	# print(mdd)
 	# exit()
 
-	with open('../1 SKIP/skip_rate.pickle', 'rb') as handle:
+	with open('skip_rate.pickle', 'rb') as handle:
 		item_sr = pickle.load(handle)
-
-	with open('../1 SKIP/neg.pickle', 'rb') as handle:
-		pos = pickle.load(handle)
 
 	with open('../1 SKIP/item_dict.pickle', 'rb') as handle:
 		sr_dict = pickle.load(handle)
@@ -162,13 +159,13 @@ if __name__ == "__main__":
 		print("Mean Test Accuracy:"+str(score_test))
 		print("F-score:"+str(f1_score(y_test, pred_y, average='macro')))
 
-
+	'''
 	with open('pos_res.pickle', 'wb') as handle:
 		pickle.dump(res_pos, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 	with open('neg_res.pickle', 'wb') as handle:
 		pickle.dump(res_neg, handle, protocol=pickle.HIGHEST_PROTOCOL)
-		
+	'''	
 
 		########## chi square ############
 		# scores, pvalues = chi2(X, y)
