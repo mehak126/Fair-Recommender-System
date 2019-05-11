@@ -13,6 +13,7 @@ python hour_plot.py
 Input: hour.xlsx (available)
 Output: plots no. of users every hour
 
-# plot.py
-Input: 
-Output: 
+# month_analysis.py
+Input: mdd_time.csv
+line 113 - mdd_items.pickle (can be replaced with any <topic>_items.pickle available in Data's topics folders)
+Output: plots frquency at which new items are generated in diff months. 
