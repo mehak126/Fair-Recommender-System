@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd 
-import pickle 
+import pickle, sys
 import math
 import random 
 from sklearn.linear_model import LogisticRegression
@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
 	random.seed()
 
-	num_clusters = 5
+	num_clusters = int(sys.argv[1])
 
 	# datax = pd.read_csv('regression_aspect_merge_new_metric.csv', low_memory=False, header = None).as_matrix()
 	datax = pd.read_csv('../Data/met2_45_45/features_equal_rates.csv', low_memory=False, header = None).as_matrix()
