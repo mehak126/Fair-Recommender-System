@@ -1,1 +1,18 @@
-123
+## Description of files
+
+# hour_prob.py
+Purpose: Plots probability of user reaching any rank (extracting this information form data)
+Input:
+Either uncomment 49-71 (taking the whole original data) OR
+uncomment line 73 - mdd_time.csv(all cols, only hours n which mdd was played)
+Output: plot of probability of users reaching any rank with error bars
+
+# hour_plot.py
+Input:
+Output:
+
+# hour_jja.py
+
+# plot.py
+Input: 
+Output: 
