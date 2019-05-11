@@ -10,8 +10,11 @@ line 55-56 - set the heard and skipped percentage
 Output: skip_rate.pickle, pos.pickle, neg.pickle, item_dict.pickle
 
 Step 2: logistic.py
-Input:
+Input: 
+skip_rate.pickle, item_dict.pickle (same folder, generated in prev step)
+fetaues_equal_rates.csv, mdd_items.pickle (Data folder)
 Output:
+On console prints, F-scores of prediction and p values of features for every cluster 
 
 Step 3: classifier.py
 Input:
