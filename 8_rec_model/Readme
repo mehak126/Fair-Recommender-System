@@ -1,1 +1,23 @@
-123
+## Description of files
+
+# model.py
+To run these models -
+python model<number>.py r k T min_exp aspect_item_dict r_file
+
+Input:
+r : number of rank slots
+k : number of intervals
+T : total time duration
+min_exp : min % exposure to give to each aspect
+aspect_item_dict : pickled dictionary of aspects with items mapped to them which were positive
+r_file : file containing number of users coming to rank i per minute
+A time slot of time T is divided into k intervals. In each interval we rank r items
+
+Output: aspect_exp_1.txt, res1.pickle, hhi1.pickle, item_exp_1.csv
+
+# compare.py
+To run this file -
+python compare.py
+Input: hhi<index>.pickle, res<index>.pickle
+Output: rmse, hhi plots generated
+
