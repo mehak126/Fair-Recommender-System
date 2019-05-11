@@ -13,7 +13,7 @@ Input:
 pos.pickle, neg.pickle, item_dict.pickle => Files generated in Classifier >> skip_rate.py
 item_asp_map.pickle => output of item_asp.py(above file description)
 Output: 
-Plots a heat map of num_aspects*num_clusters, whihc shows the preference of cluster towards any aspect.
+Plots a heat map of num_aspects*num_clusters, which shows the preference of cluster towards any aspect.
 
 
 
