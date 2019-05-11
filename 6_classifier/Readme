@@ -1,1 +1,22 @@
-123
+## File description 
+
+Step 1: skip_rate.py
+To run this code - 
+python skip_rate.py
+Input: 
+line 9 - change to location of merge11_col.py
+u_dict.pickle, 5_k_prototype.txt
+line 55-56 - set the heard and skipped percentage
+Output: skip_rate.pickle, pos.pickle, neg.pickle, item_dict.pickle
+
+Step 2: logistic.py
+Input:
+Output:
+
+Step 3: classifier.py
+Input:
+Output:
+
+pref_items.py
+Input:
+Output:
