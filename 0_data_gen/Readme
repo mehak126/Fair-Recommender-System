@@ -10,7 +10,7 @@ python fnew_gen_data.py
 '''
 
 # analyze_campaign
-* Input: merge11_col.csv 
+* Input: LIne 82 - chnage to location of file that you want to analyze(for its campaigns) - new11_col.csv/merge11_col.csv 
 * Output: 
 
 Analysis of Campaign categories in data obtained after power user extraction. We had already removed the data entries for items with "NA" as their theme and source. So, all the items in the filtered data had some campaign categories.
