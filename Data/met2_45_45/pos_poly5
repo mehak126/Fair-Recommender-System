@@ -1,0 +1,56 @@
+----- cluster 0------
+nan: 463
+<= 0: 74
+> 0: 180
+<= 0: 180
+> 0: 180
+Mean Train Accuracy:0.8376068376068376
+Mean Test Accuracy:0.626984126984127
+----- cluster 1------
+nan: 410
+<= 0: 200
+> 0: 107
+<= 0: 200
+> 0: 200
+Mean Train Accuracy:0.7307692307692307
+Mean Test Accuracy:0.45
+----- cluster 2------
+nan: 323
+<= 0: 71
+> 0: 323
+<= 0: 323
+> 0: 323
+Mean Train Accuracy:0.7852028639618138
+Mean Test Accuracy:0.1762114537444934
+----- cluster 3------
+nan: 426
+<= 0: 191
+> 0: 100
+<= 0: 191
+> 0: 191
+Mean Train Accuracy:0.7056451612903226
+Mean Test Accuracy:0.3283582089552239
+----- cluster 4------
+nan: 649
+<= 0: 41
+> 0: 27
+<= 0: 41
+> 0: 41
+Mean Train Accuracy:0.7547169811320755
+Mean Test Accuracy:0.6206896551724138
+----- cluster 5------
+nan: 145
+<= 0: 509
+> 0: 63
+<= 0: 509
+> 0: 509
+Mean Train Accuracy:0.8275340393343419
+Mean Test Accuracy:0.47058823529411764
+----- cluster 6------
+nan: 581
+<= 0: 62
+> 0: 74
+<= 0: 74
+> 0: 74
+Mean Train Accuracy:0.84375
+Mean Test Accuracy:0.5961538461538461

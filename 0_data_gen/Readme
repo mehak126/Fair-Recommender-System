@@ -1,1 +1,169 @@
-123
+### Extracting relevant data
+
+##Description of files
+# fnew_gen_data
+* Input: bmgf data files 
+* Output: new11_col.csv <user id, item id, item duration, duration heard, key pressed, source, theme, call id, contributor id, rating, campaign category>
+To run this file, 
+'''
+python fnew_gen_data.py 
+'''
+
+# analyze_campaign
+* Input: LIne 82 - chnage to location of file that you want to analyze(for its campaigns) - new11_col.csv/merge11_col.csv 
+* Output: 
+
+Analysis of Campaign categories in data obtained after power user extraction. We had already removed the data entries for items with "NA" as their theme and source. So, all the items in the filtered data had some campaign categories.
+res_final.txt that has the analysis of - 
+   * campaign categories per theme
+   * no. of unique items per campaign category.
+   * no. of unique users who had heard at least one item from that campaign category.
+To run this file, 
+'''
+python analyze_campaign.py
+'''
+
+# combine 
+* Input: new11_col.csv
+* Output: merge11_col.csv <user id, item id, item duration, duration heard, key pressed, source, theme, call id, contributor id, rating, campaign category>
+After obtaining the results of analyze_campaign.py.
+We worked only on the following aspects of topics. Sir had removed many campaign-categories from consideration, where their meaning was ambiguous and the moderators may not have coded these items consistently. You can also remove from here some aspects with very few items, if needed.
+This code merges the following types of aspects only for MDD(for other topics this was handled later in some other code) -
+* In-depth knowledge on age-appropriate feeding - Diversity/Food groups 
+* In-depth knowledge on age-appropriate feeding - Consistency of food
+
+----------------------------------------
+CF 39
+Entitlements (social and govt.) 1 10
+Basic awareness - Importance of breast-milk 37 1201
+Basic awareness - Importance 34 867
+Basic awareness - Initiation (when to start) 7 183
+[MERGE ALL BASIC AWARENESS CATEGORIES TOGETHER]
+Myths and misconceptions - Feeding biscuits and chips 1 779
+general 9 1197
+In-depth knowledge on age-appropriate feeding - Diversity/Food groups 97 1856
+In-depth knowledge on age-appropriate feeding - Consistency of food 1 901
+In-depth knowledge on age-appropriate feeding - Frequency/ intervals 1 7
+In-depth knowledge on age-appropriate feeding - Importance of nutrition for children 4 318
+[MERGE ALL IN-DEPTH KNOWLEDGE CATEGORIES TOGETHER]
+Livelihoods (employment included) 3 129
+Agriculture 2 86
+Social issues 9 207
+Serial appreciation and feedback 7 126
+entertainment 2 65
+Factors influencing practice - role of health- workers 7 200
+Positive change - In behaviour/ action 1 155
+Positive change - In awareness 1 35
+[MERGE ALL POSITIVE CHANGE CATEGORIES TOGETHER]
+Other important factors - Hygiene while cooking 1 10
+Other important factors - Separate utensils 1 8
+Other important factors - kitchen garden 2 82
+Other important factors - Feeding difficult and weak children 1 867
+[MERGE ALL OTHER IMPORTANT FACTORS CATEGORIES TOGETHER]
+----------------------------------------
+MDD 47
+Basic awareness - importance 163 2324
+Basic awareness - others 6 1570
+Basic awareness - Importance of breast-milk 6 438
+Basic awareness - Initiation (when to start) 2 24
+[MERGE ALL BASIC AWARENESS CATEGORIES TOGETHER]
+In-depth knowledge - Food groups/ types 254 3373
+In-depth knowledge - Quantity 8 2335
+In-depth knowledge - Frequency/ intervals 6 616
+In-depth knowledge - Importance of nutrition and care for pregnant women 13 178
+In-depth knowledge - Supplementary tablets 8 172
+In-depth knowledge - Ration for pregnant women 2 44
+In-depth knowledge on age-appropriate feeding - Diversity/Food groups 3 75
+In-depth knowledge - others 1 66
+[MERGE ALL IN-DEPTH KNOWLEDGE CATEGORIES TOGETHER]
+Serial appreciation and feedback 40 695
+Factors influencing practice - myths and misconceptions 1 16
+Factors influencing practice - care givers' role 6 183
+Factors influencing practice - Decision making at houses 3 74
+Factors influencing practice - knowledge 2 32
+Factors influencing practice - role of health-workers 22 286
+[MERGE ALL FACTORS INFLUENCING PRACTICE CATEGORIES TOGETHER]
+Existing practice - kinds of care provided 16 885
+Existing practice - actual food consumed 1 13
+Existing practice - eating practices 4 70
+Existing practice - actual eating frequencies 6 143
+Existing practice - others 1 43
+[MERGE ALL EXISTING PRACTICE CATEGORIES TOGETHER]
+general 12 1496
+Social issues 3 167
+Livelihoods (employment included) 1 54
+Iron deficiency/ anemia -Symptoms 4 929
+Iron deficiency/ anemia - others 1 141
+Iron deficiency/ anemia -Health implications 1 14
+Iron deficiency/ anemia - Iron-tablet dosage 2 746
+[MERGE ALL IRON DEFICIENCY CATEGORIES TOGETHER]
+Status of the women- Pregnant/ have been pregnant recently 1 84
+Status of the women- Someone in neighbourhood pregnant/ have been pregnant 1 26
+[MERGE ALL STATUS OF WOMEN CATEGORIES TOGETHER]
+Entitlements (social and govt.) 2 133
+Positive change - In behaviour/ action 1 346
+----------------------------------------
+ORS and diarrhea management 12
+In depth knowledge - symptoms of diarrhea 1 122
+In depth knowledge - preparation   25 2055
+In depth knowledge - symptoms of diarrhea  2 105
+In depth knowledge - dosage 5 893
+In depth knowledge - importance of hygiene and hand wash 4 770
+[MERGE ALL IN-DEPTH KNOWLEDGE CATEGORIES TOGETHER]
+Basic awareness- importance 4 670
+Basic awareness- importance  7 1113
+[MERGE ALL BASIC AWARENESS CATEGORIES TOGETHER]
+General 1 364
+----------------------------------------
+Social Entitlements 20
+Kanya Suraksha Yojana â€“ grievance 3 33
+Kanya Suraksha Yojana â€“ information 17 1486
+Kanya Suraksha Yojana â€“ others (experience sharing 3 630
+[MERGE ALL KANYA SURAKSHA CATEGORIES TOGETHER]
+Bridhdha pension â€“ information 13 1522
+Bridhdha pension â€“ grievance 14 186
+Bridhdha pension â€“ others 3 80
+[MERGE ALL BRIDHDHA PENSION CATEGORIES TOGETHER]
+Vidhva pension â€“ information 8 1156
+Vidhva pension â€“ grievance 11 101
+[MERGE ALL VIDHYA PENSION CATEGORIES TOGETHER]
+PHC-CHC â€“ information 11 1667
+PHC-CHC â€“ grievance 14 187
+PHC-CHC â€“ others 2 35
+[MERGE ALL PHC-CHC CATEGORIES TOGETHER]
+VHSND â€“ information 8 1200
+----------------------------------------
+Family Planning 25
+Basic awareness: Importance of family planning- Better health of mother and children 13 1248
+Basic awareness: Importance of family planning - Socio-cultural well-being 6 709
+Basic awareness: Importance of family planning -  Economic well-being 6 626
+Basic awareness: Importance of family planning - Others 3 127
+[MERGE ALL BASIC AWARENESS CATEGORIES TOGETHER]
+In-depth knowledge about elements of family planning - Delay in first pregnancy 6 1319
+In-depth knowledge about elements of family planning - Delay in first pregnancy  29 1539
+In-depth knowledge about elements of family planning - Gap between pregnancies 6 560
+In-depth knowledge about elements of family planning - Limiting family size  2 22
+[MERGE ALL IN-DEPTH KNOWLEDGE CATEGORIES TOGETHER]
+Status of the women/ family - number of children 11 681
+Status of the women/ family  - Number of pregnancies 3 201
+[MERGE ALL STATUS OF THE WOMEN CATEGORIES TOGETHER]
+Contraceptive measures - Pills for women 2 39
+Contraceptive measures - Others 5 179
+Contraceptive measures - Vasectomy/ nasbandi for men 1 12
+[MERGE ALL CONTRACEPTIVE MEASURES CATEGORIES TOGETHER]
+Social issues 2 76
+Initiatives 1 25
+Discussion in SHG meeting - About importance of family planning 1 22
+Serial appreciation and feedback - Positive 4 111
+entertainment 1 23
+----------------------------------------
+
+Education 6
+Bal sansad/ Meena manch 18 995
+Career counselling - teacher interview 18 900
+----------------------------------------
+
+To run this file, 
+'''
+python combine.py
+'''

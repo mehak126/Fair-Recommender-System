@@ -1,1 +1,19 @@
-123
+Instructions for running codes:
+
+Step 1: run python3 num_calls.py data_file
+data_file is the file created from 0_data_gen. Currently, we are using file merge_11cols.csv
+This will generate the cumulative distribution of users according to the number of calls they made. Select the desired cutoff
+and set th1 in line 83 of thresh.py. Put a very large value for th2 (will be decided later).
+
+Step 2: run python3 thresh.py data_file
+data file is again merge_11cols.csv. Set values of th1 and th2 as described above. A new file thresh_th1_th2.csv will be generated
+with those users who did not satisfy the threshold requirements removed.
+
+Step 3: run python3 keys_pressed.py data_file
+data file is again merge_11cols.csv. This will generate the cumulative distribution of users according to their keys pressed per second. 
+Select the desired cutoff and set th2 in line 84 of thresh.py. (Note that as we have plotted the -log on the x axis, users having
+rate below that value will be selected.)
+
+Step 4: run python3 thresh.py data_file
+data file is merge_11cols.csv. The values of th1 and th2 would have been set by now. A final file containing power users only,
+thresh_th1_th2.csv will be created.

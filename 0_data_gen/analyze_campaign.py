@@ -79,7 +79,7 @@ import pandas
 from collections import Counter
 
 if __name__ == '__main__':
-	data = pandas.read_csv('../data/merge_11col.csv', low_memory=False).as_matrix()
+	data = pandas.read_csv('../data/new_11col.csv', low_memory=False).as_matrix()
 
 	theme_list = ['others', 'Health', 'SHG', 'Education', 'Curated Local Updates', 'Social Welfare', 'Social Entertainment', 'Livelihoods', 'Agriculture', 'PFI', 'CF', 'Social Issues', 'MDD', 'Sanitation', 'KDKK', 'VHSND', 'ORS and diarrhea management', 'KITCHEN GARDENING', 'Social Entitlements', 'Family Planning']
 

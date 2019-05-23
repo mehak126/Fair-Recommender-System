@@ -1,1 +1,19 @@
-123
+## Description of files 
+
+# item_asp.py
+To run this file - python item_asp.py
+Purpose: Assigns a single aspect to an item, choosing from multiple aspect (Currently algo works using single aspect 
+... can be extended later)
+Input: features_equal_rates_<topic>.csv, <topic>_items.pickle (available in data folder)
+Output: item_asp_map.pickle
+
+# clus_asp_pref.py
+To run this file - python clus_asp_pref.py
+Input: 
+pos.pickle, neg.pickle, item_dict.pickle => Files generated in Classifier >> skip_rate.py
+item_asp_map.pickle => output of item_asp.py(above file description)
+Output: 
+Plots a heat map of num_aspects*num_clusters, which shows the preference of cluster towards any aspect.
+
+
+

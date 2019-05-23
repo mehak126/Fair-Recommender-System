@@ -16,10 +16,10 @@ if __name__ == '__main__':
 	demo1 = pandas.read_excel('SV1.xlsx').as_matrix()
 	demo2 = pandas.read_excel('SV2.xlsx').as_matrix()
 
-	with open('../Data/cf/u_dict.pickle', 'rb') as handle:
+	with open('../../Data/cf/u_dict.pickle', 'rb') as handle:
 		u_dict = pickle.load(handle)
 
-	file = open('../Data/cf/5_k_prototype.txt', 'r') 
+	file = open('../../Data/cf/5_k_prototype.txt', 'r') 
 
 	cluster = 0
 	user_cluster = {}

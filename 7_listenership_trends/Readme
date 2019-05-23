@@ -1,1 +1,19 @@
-123
+## Description of files
+
+# hour_prob.py
+Purpose: Plots probability of user reaching any rank (extracting this information form data)
+Input:
+Either uncomment 49-71 (taking the whole original data) OR
+uncomment line 73 - mdd_time.csv(all cols, only hours n which mdd was played)
+Output: plot of probability of users reaching any rank with error bars
+
+# hour_plot.py
+To run this code - 
+python hour_plot.py
+Input: hour.xlsx (available)
+Output: plots no. of users every hour
+
+# month_analysis.py
+Input: mdd_time.csv
+line 113 - mdd_items.pickle (can be replaced with any <topic>_items.pickle available in Data's topics folders)
+Output: plots frquency at which new items are generated in diff months. 

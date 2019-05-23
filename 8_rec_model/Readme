@@ -1,1 +1,46 @@
-123
+## Description of files
+
+# model.py
+To run these models -
+python model<number>.py r k T min_exp aspect_item_dict r_file
+
+Input:
+r : number of rank slots
+k : number of intervals
+T : total time duration
+min_exp : min % exposure to give to each aspect
+aspect_item_dict : pickled dictionary of aspects with items mapped to them which were positive
+r_file : file containing number of users coming to rank i per minute
+A time slot of time T is divided into k intervals. In each interval we rank r items
+
+Output: aspect_exp_1.txt, res1.pickle, hhi1.pickle, item_exp_1.csv
+
+# compare.py
+To run this file -
+python compare.py
+Input: hhi<index>.pickle, res<index>.pickle
+Output: rmse, hhi plots generated
+
+
+# modulators model
+STEP 1: <topic>_slots.py
+To run this file - python <topic>_slots.py
+Input: 
+Change variable "path" to path of bmgf data
+<topic>_items.pickle - same as in ../Data/<topic> (according which topic you are working on)
+Output: <topic>_data_jj.csv file is generated
+
+STEP 2: <topic>_list.py
+To run this file - python <topic>_list.py
+Input: 
+<topic>_data_jj.csv file
+item_asp_map.pickle - generated in 10_network_analysis/item_asp.py
+<topic>_items.pickle - same as in ../Data/<topic> (according which topic you are working on)
+R10.txt - no.of people reaching at any rank
+Output: 
+hhim_cf.pickle
+aspect_exp_m_cf.txt
+item_exp_m_cf.csv
+
+--These file are used in compare.py
+change model6 to these files accordingly

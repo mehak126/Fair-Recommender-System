@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd 
-import pickle 
+import pickle, sys
 import math
 import random 
 from sklearn.linear_model import LogisticRegression
@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
 	random.seed()
 
-	num_clusters = 5
+	num_clusters = int(sys.argv[1])
 
 	# datax = pd.read_csv('regression_aspect_merge_new_metric.csv', low_memory=False, header = None).as_matrix()
 	datax = pd.read_csv('../Data/met2_45_45/features_equal_rates.csv', low_memory=False, header = None).as_matrix()
@@ -49,11 +49,8 @@ if __name__ == "__main__":
 	# print(mdd)
 	# exit()
 
-	with open('../1 SKIP/skip_rate.pickle', 'rb') as handle:
+	with open('skip_rate.pickle', 'rb') as handle:
 		item_sr = pickle.load(handle)
-
-	with open('../1 SKIP/neg.pickle', 'rb') as handle:
-		pos = pickle.load(handle)
 
 	with open('../1 SKIP/item_dict.pickle', 'rb') as handle:
 		sr_dict = pickle.load(handle)
@@ -162,13 +159,13 @@ if __name__ == "__main__":
 		print("Mean Test Accuracy:"+str(score_test))
 		print("F-score:"+str(f1_score(y_test, pred_y, average='macro')))
 
-
+	'''
 	with open('pos_res.pickle', 'wb') as handle:
 		pickle.dump(res_pos, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 	with open('neg_res.pickle', 'wb') as handle:
 		pickle.dump(res_neg, handle, protocol=pickle.HIGHEST_PROTOCOL)
-		
+	'''	
 
 		########## chi square ############
 		# scores, pvalues = chi2(X, y)

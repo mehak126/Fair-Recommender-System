@@ -1,1 +1,15 @@
-123
+For analysis of clustering done (comparing preference lists of clusters formed)
+code: analysis.py
+inputs:
+1. file containing clusters (output of 2_kprototype.py in 2_power_user_extraction)
+2. file containing preference vectors of unique users (output of 1_entropy_heard.py in 2_power_user_extraction)
+code outputs a file with the name cluster_file_name + 'analysis.txt' containing ranked lists for each cluster from most to least
+preferred (sourcextheme) pairs.
+
+
+For comparing how similar 2 clusterings are:
+code: compare_clusters.py
+inputes:
+1. first clustering output file
+2. second clustering output file
+output: value between 0 and 1, indicating how similar the clusters are

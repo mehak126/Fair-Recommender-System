@@ -1,0 +1,133 @@
+----- cluster 0------
+nan: 463
+<= 0: 74
+> 0: 180
+<= 0: 180
+> 0: 180
+[0.53319477 0.13620135 0.11628154 0.10123026 0.02070983 0.03341674
+ 0.05896551]
+Mean Train Accuracy:0.8333333333333334
+Mean Test Accuracy:0.5873015873015873
+                            Feature         pvals
+0                          Constant  0.000000e+00
+1                            Rating  1.071180e-20
+2                   Basic awareness  2.303811e-06
+3  Serial appreciation and feedback  1.954109e-12
+4                           general  4.891786e-01
+5               Status of the women  2.432906e-02
+6           Iron deficiency/ anemia  6.785680e-01
+7                 Context Intensity  5.380592e-02
+----- cluster 1------
+nan: 410
+<= 0: 200
+> 0: 107
+<= 0: 200
+> 0: 200
+[0.4474716  0.09934706 0.08396596 0.06105801 0.0428137  0.10699541
+ 0.15834825]
+Mean Train Accuracy:0.7307692307692307
+Mean Test Accuracy:0.4928571428571429
+                            Feature         pvals
+0                          Constant  0.000000e+00
+1                            Rating  4.499654e-12
+2                   Basic awareness  2.160655e-02
+3  Serial appreciation and feedback  2.528787e-02
+4                           general  2.027536e-01
+5               Status of the women  6.439304e-01
+6           Iron deficiency/ anemia  1.000000e+00
+7                 Context Intensity  4.467448e-02
+----- cluster 2------
+nan: 323
+<= 0: 71
+> 0: 323
+<= 0: 323
+> 0: 323
+[0.24485742 0.24155203 0.09236002 0.21844438 0.03915235 0.07986059
+ 0.08377322]
+Mean Train Accuracy:0.7852028639618138
+Mean Test Accuracy:0.05726872246696035
+                            Feature     pvals
+0                          Constant  0.000000
+1                            Rating  0.077342
+2                   Basic awareness  0.714082
+3  Serial appreciation and feedback  0.403643
+4                           general  0.001522
+5               Status of the women  0.001406
+6           Iron deficiency/ anemia  0.015739
+7                 Context Intensity  0.000869
+----- cluster 3------
+nan: 426
+<= 0: 191
+> 0: 100
+<= 0: 191
+> 0: 191
+[0.35699045 0.14405318 0.07706445 0.0988583  0.06351004 0.12072775
+ 0.13879582]
+Mean Train Accuracy:0.6975806451612904
+Mean Test Accuracy:0.3283582089552239
+                            Feature     pvals
+0                          Constant  0.000000
+1                            Rating  0.003619
+2                   Basic awareness  0.050175
+3  Serial appreciation and feedback  0.450400
+4                           general  0.431286
+5               Status of the women  0.226779
+6           Iron deficiency/ anemia  0.215037
+7                 Context Intensity  0.299021
+----- cluster 4------
+nan: 649
+<= 0: 41
+> 0: 27
+<= 0: 41
+> 0: 41
+[0.4284476  0.1580082  0.09150784 0.23964059 0.00994105 0.07245471
+ 0.        ]
+Mean Train Accuracy:0.7547169811320755
+Mean Test Accuracy:0.5862068965517241
+                            Feature     pvals
+0                          Constant  0.000000
+1                            Rating  0.000325
+2                   Basic awareness  0.721790
+3  Serial appreciation and feedback  0.595682
+4                           general  0.252031
+5               Status of the women  0.320326
+6           Iron deficiency/ anemia  0.987878
+7                 Context Intensity       NaN
+----- cluster 5------
+nan: 145
+<= 0: 509
+> 0: 63
+<= 0: 509
+> 0: 509
+[0.21059463 0.15217344 0.29983406 0.12156194 0.04907455 0.07476629
+ 0.09199508]
+Mean Train Accuracy:0.8320726172465961
+Mean Test Accuracy:0.453781512605042
+                            Feature         pvals
+0                          Constant  0.000000e+00
+1                            Rating  1.271024e-10
+2                   Basic awareness  1.940565e-10
+3  Serial appreciation and feedback  4.598427e-24
+4                           general  7.146421e-01
+5               Status of the women  6.742536e-01
+6           Iron deficiency/ anemia  2.901202e-09
+7                 Context Intensity  1.568068e-03
+----- cluster 6------
+nan: 581
+<= 0: 62
+> 0: 74
+<= 0: 74
+> 0: 74
+[0.41595165 0.14904461 0.12730668 0.20318724 0.03139224 0.01790322
+ 0.05521436]
+Mean Train Accuracy:0.84375
+Mean Test Accuracy:0.5769230769230769
+                            Feature         pvals
+0                          Constant  0.000000e+00
+1                            Rating  2.806347e-09
+2                   Basic awareness  4.718168e-03
+3  Serial appreciation and feedback  3.620163e-05
+4                           general  1.340465e-01
+5               Status of the women  2.286719e-02
+6           Iron deficiency/ anemia  1.187290e-01
+7                 Context Intensity  3.476498e-01

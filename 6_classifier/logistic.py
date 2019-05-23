@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd 
-import pickle 
+import pickle, sys
 import math
 from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import fetch_20newsgroups_vectorized
@@ -29,15 +29,15 @@ def plotc(cluster, x, y):
 
 if __name__ == "__main__":
 
-	num_clusters = 7
+	num_clusters = int(sys.argv[1])
 
 	# datax = pd.read_csv('regression_aspect_merge_new_metric.csv', low_memory=False, header = None).as_matrix()
 	datax = pd.read_csv('../Data/met2_45_45/features_equal_rates.csv', low_memory=False, header = None).as_matrix()
-	with open('../1 SKIP/skip_rate.pickle', 'rb') as handle:
+	with open('skip_rate.pickle', 'rb') as handle:
 		item_sr = pickle.load(handle)
 
 
-	with open('../1 SKIP/item_dict.pickle', 'rb') as handle:
+	with open('item_dict.pickle', 'rb') as handle:
 		sr_dict = pickle.load(handle)
 	
 	print(datax.shape)
@@ -134,7 +134,7 @@ if __name__ == "__main__":
 		print(myDF3)
 		continue
 		# exit()
-
+		'''	
 		newX = np.append(np.ones((len(X),1)), X, axis=1)
 		MSE = (sum((y-predictions)**2))/(len(newX)-len(newX[0]))
 
@@ -157,7 +157,7 @@ if __name__ == "__main__":
 		pd.set_option('display.width', 120)
 		myDF3["Feature"],myDF3["Coefficients"],myDF3["Standard Errors"],myDF3["t values"],myDF3["Probabilites"] = [feature_vector,params,sd_b,ts_b,p_values]
 		print(myDF3)
-
+		'''
 
 		
 

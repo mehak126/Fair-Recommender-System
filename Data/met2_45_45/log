@@ -1,0 +1,106 @@
+(717, 13)
+----- cluster 0------
+nan: 463
+< 0: 59
+> 0: 180
+= 0: 15
+F-score:0.7361090749157015
+                            Feature  Coefficients         pvals
+0                          Constant      2.456862  0.000000e+00
+1                            Rating     -0.487651  1.071180e-20
+2                   Basic awareness     -0.188603  2.303811e-06
+3  Serial appreciation and feedback      0.794640  1.954109e-12
+4                           general     -0.275482  4.891786e-01
+5               Status of the women      1.001753  2.432906e-02
+6           Iron deficiency/ anemia      0.454103  6.785680e-01
+7                 Context Intensity     -0.039485  5.380592e-02
+----- cluster 1------
+nan: 410
+< 0: 172
+> 0: 107
+= 0: 28
+F-score:0.6442796663243067
+                            Feature  Coefficients         pvals
+0                          Constant      3.444336  0.000000e+00
+1                            Rating     -0.428590  4.499654e-12
+2                   Basic awareness     -0.159734  2.160655e-02
+3  Serial appreciation and feedback     -0.046575  2.528787e-02
+4                           general     -0.231678  2.027536e-01
+5               Status of the women      0.186561  6.439304e-01
+6           Iron deficiency/ anemia      0.140752  1.000000e+00
+7                 Context Intensity     -0.162595  4.467448e-02
+----- cluster 2------
+nan: 323
+< 0: 46
+> 0: 323
+= 0: 25
+F-score:0.5529411764705883
+                            Feature  Coefficients     pvals
+0                          Constant      8.993782  0.000000
+1                            Rating     -0.079297  0.077342
+2                   Basic awareness      0.087572  0.714082
+3  Serial appreciation and feedback      0.173879  0.403643
+4                           general      0.334565  0.001522
+5               Status of the women      0.956325  0.001406
+6           Iron deficiency/ anemia      0.329266  0.015739
+7                 Context Intensity     -0.796290  0.000869
+----- cluster 3------
+nan: 426
+< 0: 161
+> 0: 100
+= 0: 30
+F-score:0.5914438502673797
+                            Feature  Coefficients     pvals
+0                          Constant      1.811291  0.000000
+1                            Rating     -0.166061  0.003619
+2                   Basic awareness     -0.266382  0.050175
+3  Serial appreciation and feedback     -0.171964  0.450400
+4                           general     -0.078889  0.431286
+5               Status of the women      0.455434  0.226779
+6           Iron deficiency/ anemia     -0.318406  0.215037
+7                 Context Intensity     -0.083269  0.299021
+----- cluster 4------
+nan: 649
+< 0: 41
+> 0: 27
+= 0: 0
+F-score:0.6759878419452887
+                            Feature  Coefficients     pvals
+0                          Constant      2.426197  0.000000
+1                            Rating     -0.575026  0.000325
+2                   Basic awareness      0.098850  0.721790
+3  Serial appreciation and feedback     -0.454557  0.595682
+4                           general      0.293848  0.252031
+5               Status of the women     -0.378295  0.320326
+6           Iron deficiency/ anemia      0.075307  0.987878
+7                 Context Intensity      0.000394       NaN
+----- cluster 5------
+nan: 145
+< 0: 458
+> 0: 63
+= 0: 51
+F-score:0.6123558710188415
+                            Feature  Coefficients         pvals
+0                          Constant      2.386524  0.000000e+00
+1                            Rating     -0.178694  1.271024e-10
+2                   Basic awareness     -0.107200  1.940565e-10
+3  Serial appreciation and feedback      0.710811  4.598427e-24
+4                           general     -0.112857  7.146421e-01
+5               Status of the women      0.444615  6.742536e-01
+6           Iron deficiency/ anemia     -0.737518  2.901202e-09
+7                 Context Intensity     -0.154193  1.568068e-03
+----- cluster 6------
+nan: 581
+< 0: 49
+> 0: 74
+= 0: 13
+F-score:0.7094461945852166
+                            Feature  Coefficients         pvals
+0                          Constant      2.324820  0.000000e+00
+1                            Rating     -0.467852  2.806347e-09
+2                   Basic awareness     -0.128357  4.718168e-03
+3  Serial appreciation and feedback      0.573900  3.620163e-05
+4                           general     -0.249055  1.340465e-01
+5               Status of the women      0.914047  2.286719e-02
+6           Iron deficiency/ anemia      0.518000  1.187290e-01
+7                 Context Intensity     -0.044514  3.476498e-01
