@@ -1,1 +1,6 @@
-123
+This folder contains the codes for community detection. 
+
+The code 0_get_csv.py contains the code to read the data logs of the power users and save a file containing a graph in the form required by igraph i.e.- vertex1 vertex2 edge_weight. Here vertex1 is the listener and vertex2 can be an item, theme or contributor depending on the kind of graph that you want to make. To run the code, simply run python2 0_get_csv.py. The input file can be changed in line 10. The output file is named 'graph_nodes.ncol'
+
+
+The code 1_community_detection.py contains the code to run louvain method on the graph formed to detect communities and then print modularity. If the graph is formed between listeners and items or themes, the bipartite graph will have to be first converted to unipartite and listeners part will be extracted. This can be done by uncommenting lines 17 & 18 and commenting line 19. For a graph between listeners and contributors, this does not have to be done and simply uncomment line 19 and comment lines 17 & 18.
