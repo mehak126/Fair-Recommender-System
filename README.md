@@ -1,6 +1,7 @@
 # Fairness and Diversity in the Recommendation and Ranking of Participatory Media Content
 
 This work was done as part of my Bachelor's Project at IIT, Delhi under Prof. Aaditeshwar Seth.
+
 Published at the Intelligent Information Feed in Conjunction with KDD, 2019
 
 **Abstract**
